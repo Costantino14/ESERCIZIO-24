@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#modifica {
+    display: none; /*bottone modifica in display none quando si è in modalità aggiungi*/
+}
+
+#box-message {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: rgb(255, 236, 206);
+    padding: 5px 15px;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+.card { /*impostazioni estetiche*/
+    height: 700px;
+}
+
+/*SOLO IN FORMATO MOBILE*/
+@media (max-width: 580px) {
+
+    .col {  /*impostazioni estetiche*/
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+}

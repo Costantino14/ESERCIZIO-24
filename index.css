@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main {
+    background-color: #edf3fb; /*colore sfondo*/
+}
+
+/*inserito da script.js*/
+.btn-group {
+    display: none;  /*metto in display none i bottoni modifica e cancella in modo che non vengano visualizzati dagli utenti*/
+}
+
+.card { /*impostazioni estetiche*/
+    height: 700px;
+    border: 1px solid goldenrod;
+}
+
+.card:hover {
+    animation: zoom-animation .5s ease-in-out forwards;
+}
+
+@keyframes zoom-animation {
+    0% {
+        transform: scale(1);
+    }
+    
+    100% {
+        transform: scale(1.03);
+    }
+    
+}
+
+/*SOLO IN FORMATO MOBILE*/
+@media (max-width: 580px) {
+
+    .col {  /*impostazioni estetiche*/
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+}

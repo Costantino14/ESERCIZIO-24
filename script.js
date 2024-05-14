@@ -66,7 +66,17 @@ window.onload = () => {
 
 const showProduct = () => {
 
-  containerBack.innerHTML= "";
+  if (containerFront) {
+    containerFront.innerHTML= "";
+  }
+
+  // Aggiungo la card al contenitore delle schede nella pagina backoffice
+  if (containerBack) {
+    containerBack.innerHTML= "";
+  }
+  
+  
+
  fetch(url, { headers: 
     {"Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NjNhMDhlOTBiM2IyNTAwMTUxYjU0MjMiLCJpYXQiOjE3MTUwNzk0MDEsImV4cCI6MTcxNjI4OTAwMX0.iqn4atP9ZiKIYnK2AlZ4ujVFKB-PwQ_njyZ9OTGAW-c"}
   })
